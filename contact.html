@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact page with form validation, map, and social contact information." />
+  <title>Contact | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-loader">
+    <div class="loader-ring"></div>
+  </div>
+  <div class="progress-wrap"><div class="progress-bar"></div></div>
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo"><span>PX</span>Portfolio</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="container reveal">
+      <div class="section-title">Contact</div>
+      <h2>Let's connect and build something remarkable together.</h2><br />
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <div class="contact-card-inner">
+            <span>✉️</span><br />
+
+            <h3>Send a Message</h3>
+            <p>Share your project idea or ask a question and I’ll respond quickly.</p>
+          </div>
+          <form id="contact-form" class="contact-form">
+            <input id="name" type="text" placeholder="Your Name" required />
+            <input id="email" type="email" placeholder="Your Email" required />
+            <input id="subject" type="text" placeholder="Subject" required />
+            <textarea id="message" placeholder="Write your message" required></textarea>
+            <button class="btn" type="submit">Send Message</button>
+            <p id="form-message"></p>
+          </form>
+        </div>
+        <div class="contact-card reveal">
+          <div class="card">
+            <h3>Contact Info</h3>
+            <p>Email: nikhilk21518@gmail.com</p>
+            <p>Phone: +91 70178 47291</p>
+            <p>Location: Sehera ,Bulandshahr, Uttar Pradesh, India</p>
+          </div>
+          <div class="card">
+            <h3>Social Links</h3>
+            <a href="https://github.com/nikhilk2151" target="_blank" rel="noreferrer">GitHub</a><br />
+            <a href="https://www.linkedin.com/in/nikhil-kumar-b3997732a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">LinkedIn</a><br />
+            <a href="https://www.instagram.com/_its_nikhil245_?igsh=MW00cHYwcjd6OXJrag==" target="_blank" rel="noreferrer">Instagram</a><br />
+            <a href="mailto:nikhilk21518@gmail.com">Email</a><br />
+            <a href="tel:7017847291">Phone</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container reveal">
+      <div class="section-title">Map</div>
+      <div class="map-frame">
+        <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3490.2060060010537!2d77.67884721546675!3d28.98445008240926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce0f2be05e5ed%3A0xed1e62e86f9c22d4!2sChaudhary%20Charan%20Singh%20University!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-left">
+        <p>&copy; 2026 Nikhil Kumar. Built with HTML, CSS & JavaScript.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

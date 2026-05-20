@@ -1,0 +1,15 @@
+# Windows thumbnail database files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Folder config file
+[Dd]esktop.ini
+
+# VS Code
+.vscode/
+
+# Editor temp files
+*.swp
+*~
+.DS_Store
