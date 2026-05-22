@@ -102,7 +102,7 @@ searchInput?.addEventListener('input', () => {
 certificateButtons.forEach(btn => {
   btn.addEventListener('click', () => {
     const src = btn.dataset.certificate;
-    const title = btn.dataset-title || 'Certificate Preview';
+    const title = btn.dataset.title || 'Certificate Preview';
     modalImage.src = src;
     modalTitle.textContent = title;
     modalOverlay.classList.add('active');

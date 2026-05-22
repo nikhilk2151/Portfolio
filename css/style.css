@@ -23,25 +23,132 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Global 4-orb glowing mesh background system */
+main::before {
+  content: "";
+  position: fixed;
+  top: 35%;
+  left: 75%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(255, 112, 166, 0.08) 0%, transparent 70%);
+  filter: blur(110px);
+  pointer-events: none;
+  z-index: -1;
+  will-change: transform;
+  animation: floatOrb3 26s ease-in-out infinite;
+}
+
+main::after {
+  content: "";
+  position: fixed;
+  top: 55%;
+  left: -15%;
+  width: 55vw;
+  height: 55vw;
+  background: radial-gradient(circle, rgba(74, 78, 255, 0.09) 0%, transparent 70%);
+  filter: blur(110px);
+  pointer-events: none;
+  z-index: -1;
+  will-change: transform;
+  animation: floatOrb4 32s ease-in-out infinite;
+}
+
 body {
   min-height: 100vh;
-  background: radial-gradient(circle at top left, rgba(112, 214, 255, 0.18), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(255, 96, 171, 0.14), transparent 22%),
-    linear-gradient(180deg, #070a1b 0%, #02040d 100%);
+  background-color: #02040d;
+  background-image: linear-gradient(180deg, #070a1b 0%, #02040d 100%);
+  background-attachment: fixed;
   color: var(--text);
   font-size: 16px;
   line-height: 1.7;
   overflow-x: hidden;
+  position: relative;
 }
 
 body::before {
   content: "";
   position: fixed;
-  inset: 0;
-  background: radial-gradient(circle at top center, rgba(112, 214, 255, 0.14), transparent 20%),
-    radial-gradient(circle at bottom left, rgba(173, 95, 255, 0.08), transparent 15%);
+  top: -12%;
+  left: -12%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(112, 214, 255, 0.12) 0%, transparent 70%);
+  filter: blur(100px);
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
+  will-change: transform;
+  animation: floatOrb1 22s ease-in-out infinite;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: -12%;
+  right: -12%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(173, 95, 255, 0.08) 0%, transparent 70%);
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: -1;
+  will-change: transform;
+  animation: floatOrb2 28s ease-in-out infinite;
+}
+
+/* Hardware-accelerated drift animations for background glow orbs */
+@keyframes floatOrb1 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(6vw, 10vh, 0) scale(1.12);
+  }
+  66% {
+    transform: translate3d(-3vw, 15vh, 0) scale(0.92);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes floatOrb2 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-8vw, -10vh, 0) scale(0.92);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes floatOrb3 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  40% {
+    transform: translate3d(-8vw, -12vh, 0) scale(1.1);
+  }
+  70% {
+    transform: translate3d(-4vw, 8vh, 0) scale(0.95);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes floatOrb4 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(10vw, -8vh, 0) scale(1.12);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
 }
 
 img {
@@ -437,6 +544,134 @@ p {
   color: rgba(248, 251, 255, 0.84);
 }
 
+.social-links {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  color: rgba(248, 251, 255, 0.92);
+  padding: 0.5rem 0.8rem;
+  border-radius: 12px;
+  transition: background var(--transition), transform var(--transition);
+  width: 100%;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.02);
+}
+
+.social-link .social-icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.social-icon.small {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: inherit;
+}
+
+.social-text {
+  font-weight: 700;
+  color: rgba(248, 251, 255, 0.95);
+  white-space: nowrap;
+  transition: color var(--transition);
+}
+
+.social-icon {
+  transition: transform var(--transition), background var(--transition), border-color var(--transition), box-shadow var(--transition), color var(--transition);
+}
+
+/* Brand colors (fixed specificity override) */
+.social-icon.social-icon-github {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.social-icon.social-icon-linkedin {
+  color: #0077b5;
+  background: rgba(0, 119, 181, 0.08);
+  border-color: rgba(0, 119, 181, 0.2);
+}
+.social-icon.social-icon-instagram {
+  color: #ff5a9e;
+  background: linear-gradient(135deg, rgba(245, 133, 41, 0.12), rgba(221, 42, 123, 0.12), rgba(129, 52, 175, 0.12));
+  border-color: rgba(221, 42, 123, 0.25);
+}
+.social-icon.social-icon-email {
+  color: #ea4335;
+  background: rgba(234, 67, 53, 0.08);
+  border-color: rgba(234, 67, 53, 0.2);
+}
+.social-icon.social-icon-phone {
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+/* Hover transitions and glows for social link cards */
+.social-link:hover .social-icon-github {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.22);
+}
+.social-link:hover .social-icon-github + .social-text {
+  color: #ffffff;
+}
+
+.social-link:hover .social-icon-linkedin {
+  background: rgba(0, 119, 181, 0.22);
+  border-color: rgba(0, 119, 181, 0.55);
+  box-shadow: 0 0 16px rgba(0, 119, 181, 0.4);
+}
+.social-link:hover .social-icon-linkedin + .social-text {
+  color: #0077b5;
+}
+
+.social-link:hover .social-icon-instagram {
+  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 0 18px rgba(221, 42, 123, 0.5);
+}
+.social-link:hover .social-icon-instagram + .social-text {
+  color: #ff5a9e;
+}
+
+.social-link:hover .social-icon-email {
+  background: rgba(234, 67, 53, 0.22);
+  border-color: rgba(234, 67, 53, 0.55);
+  box-shadow: 0 0 16px rgba(234, 67, 53, 0.4);
+}
+.social-link:hover .social-icon-email + .social-text {
+  color: #ea4335;
+}
+
+.social-link:hover .social-icon-phone {
+  background: rgba(16, 185, 129, 0.22);
+  border-color: rgba(16, 185, 129, 0.55);
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.4);
+}
+.social-link:hover .social-icon-phone + .social-text {
+  color: #10b981;
+}
+
+/* Ensure SVG strokes/fills follow currentColor */
+.social-link svg [stroke] { stroke: currentColor; }
+.social-link svg [fill] { fill: currentColor; }
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -719,6 +954,15 @@ p {
   place-items: center;
   background: #050816;
   color: var(--accent);
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.6s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.page-loader.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .loader-ring {
@@ -869,6 +1113,22 @@ p {
 body.light-mode {
   background: #f5f7ff;
   color: #111827;
+}
+
+body.light-mode::before {
+  background: radial-gradient(circle, rgba(112, 214, 255, 0.2) 0%, transparent 70%);
+}
+
+body.light-mode::after {
+  background: radial-gradient(circle, rgba(173, 95, 255, 0.12) 0%, transparent 70%);
+}
+
+body.light-mode main::before {
+  background: radial-gradient(circle, rgba(255, 112, 166, 0.12) 0%, transparent 70%);
+}
+
+body.light-mode main::after {
+  background: radial-gradient(circle, rgba(74, 78, 255, 0.12) 0%, transparent 70%);
 }
 
 body.light-mode .navbar {
