@@ -15,7 +15,14 @@
   <header class="navbar">
     <div class="container">
       <a href="index.html" class="logo"><span>PX</span>Portfolio</a>
-      <nav class="nav-links">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <nav class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="education.html" class="active">Education</a>
@@ -58,14 +65,16 @@
         <h3>Courses</h3>
         <ul>
           <li>Web Technologies</li>
-          <li>Database Management</li>
           <li>Data Structures</li>
           <li>Object-Oriented Programming</li>
+          <li>Professional Communication</li>
+
         </ul>
       </div>
       <div class="card">
         <h3>Academic Credentials</h3>
-        <p>12th from UP Board with 82% and 10th from S.B. Inter College with 71%.</p>
+        <p> Holding 7.9 CGPA from first semester 
+          12th from UP Board with 82% and 10th from S.B. Inter College with 71%.</p>
       </div>
     </section>
 

@@ -15,7 +15,14 @@
   <header class="navbar">
     <div class="container">
       <a href="index.html" class="logo"><span>PX</span>Portfolio</a>
-      <nav class="nav-links">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <nav class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="education.html">Education</a>
@@ -33,78 +40,123 @@
     <section class="container reveal">
       <div class="section-title">Skills</div>
       <h2>Core capabilities with animated charts and progress experiences.</h2><br />
+      
+      <!-- Featured Skills Card -->
+      <div class="featured-skill-card">
+        <div class="featured-content">
+          <h3>My Technical Expertise</h3>
+          <p>I'm proficient in a wide range of technologies spanning frontend, backend, databases, and core computer science concepts. Each skill has been developed through hands-on projects and real-world applications.</p>
+          <div class="skill-tags">
+            <span class="tag">Web Development</span>
+            <span class="tag">Backend Development</span>
+            <span class="tag">Data Structures</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Individual Skill Cards -->
       <div class="cards-grid">
-        <div class="card">
-          <h3>Frontend Skills</h3>
-          <div class="skill-item">
-            <div class="skill-meta">HTML/CSS</div>
-            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">JavaScript</div>
-            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">React</div>
-            <div class="skill-bar"><div class="skill-fill" style="width: 82%"></div></div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🌐</div>
+          <h3>HTML</h3>
+          <p>Semantic markup and accessibility standards</p>
+          <div class="skill-level">
+            <span class="level-badge">95%</span>
           </div>
         </div>
-        <div class="card">
-          <h3>Backend Skills</h3>
-          <div class="skill-item">
-            <div class="skill-meta">Node.js</div>
-            <div class="skill-bar"><div class="skill-fill" style="width: 78%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">Express</div>
-            <div class="skill-bar"><div class="skill-fill" style="width: 74%"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">Databases</div>
-            <div class="skill-bar"><div class="skill-fill" style="width: 72%"></div></div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Responsive design and modern styling</p>
+          <div class="skill-level">
+            <span class="level-badge">93%</span>
           </div>
         </div>
-        <div class="card">
-          <h3>Tools & Technologies</h3>
-          <div class="skill-item">
-            <div class="skill-meta">Git</div>
-            <div class="skill-bar"><div class="skill-fill" style="width: 92%"></div></div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>ES6+, DOM manipulation, async programming</p>
+          <div class="skill-level">
+            <span class="level-badge">90%</span>
           </div>
-          <div class="skill-item">
-            <div class="skill-meta">API</div>
-            <div class="skill-bar"><div class="skill-fill" style="width: 68%"></div></div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🔧</div>
+          <h3>C</h3>
+          <p>Systems programming and core concepts</p>
+          <div class="skill-level">
+            <span class="level-badge">85%</span>
           </div>
-          <div class="skill-item">
-            <div class="skill-meta">Testing</div>
-            <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">⚙️</div>
+          <h3>C++</h3>
+          <p>Object-oriented programming and STL</p>
+          <div class="skill-level">
+            <span class="level-badge">88%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">📊</div>
+          <h3>Data Structures & Algorithms</h3>
+          <p>Optimization and problem-solving techniques</p>
+          <div class="skill-level">
+            <span class="level-badge">92%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">⚛️</div>
+          <h3>React</h3>
+          <p>Hooks, state management, component design</p>
+          <div class="skill-level">
+            <span class="level-badge">82%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🚀</div>
+          <h3>Node.js</h3>
+          <p>Server development and REST APIs</p>
+          <div class="skill-level">
+            <span class="level-badge">78%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🗄️</div>
+          <h3>MongoDB</h3>
+          <p>NoSQL databases and document modeling</p>
+          <div class="skill-level">
+            <span class="level-badge">80%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🔗</div>
+          <h3>API</h3>
+          <p>REST APIs and integration design</p>
+          <div class="skill-level">
+            <span class="level-badge">85%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">📦</div>
+          <h3>Git</h3>
+          <p>Version control and collaboration</p>
+          <div class="skill-level">
+            <span class="level-badge">92%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🧪</div>
+          <h3>Testing</h3>
+          <p>Unit testing and quality assurance</p>
+          <div class="skill-level">
+            <span class="level-badge">76%</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container reveal skills-grid">
-      <div class="skill-circle" data-percent="94">
-        <svg viewBox="0 0 120 120">
-          <circle class="bg" cx="60" cy="60" r="60"></circle>
-          <circle class="progress" cx="60" cy="60" r="60"></circle>
-        </svg>
-        <span>94%</span>
-      </div>
-      <div class="skill-circle" data-percent="88">
-        <svg viewBox="0 0 120 120">
-          <circle class="bg" cx="60" cy="60" r="60"></circle>
-          <circle class="progress" cx="60" cy="60" r="60"></circle>
-        </svg>
-        <span>88%</span>
-      </div>
-      <div class="skill-circle" data-percent="76">
-        <svg viewBox="0 0 120 120">
-          <circle class="bg" cx="60" cy="60" r="60"></circle>
-          <circle class="progress" cx="60" cy="60" r="60"></circle>
-        </svg>
-        <span>76%</span>
-      </div>
-    </section>
+   
   </main>
 
   <footer class="footer">

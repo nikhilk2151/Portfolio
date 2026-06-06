@@ -1,4 +1,5 @@
 const navLinks = document.querySelector('.nav-links');
+const menuToggle = document.getElementById('menuToggle');
 const body = document.body;
 const sections = document.querySelectorAll('section[id]');
 const progressBar = document.querySelector('.progress-bar');
@@ -44,6 +45,29 @@ function typeAnimation() {
 
 typeAnimation();
 
+// Mobile Menu Toggle Functionality
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  });
+
+  // Close menu when a link is clicked
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      menuToggle.classList.remove('active');
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.navbar')) {
+      navLinks.classList.remove('active');
+      menuToggle.classList.remove('active');
+    }
+  });
+}
 
 
 const revealObserver = new IntersectionObserver((entries) => {
