@@ -130,11 +130,7 @@ certificateButtons.forEach(btn => {
     const title = btn.dataset.title || 'Certificate Preview';
     modalImage.src = src;
     modalTitle.textContent = title;
-    if (src && src.includes('3Skill_Pvt.png')) {
-      modalImage.style.filter = 'invert(0.9) hue-rotate(180deg)';
-    } else {
-      modalImage.style.filter = 'none';
-    }
+    modalImage.style.filter = 'none';
     modalOverlay.classList.add('active');
   });
 });
@@ -215,11 +211,7 @@ imageModals.forEach(button => {
     const title = button.dataset.title;
     modalImage.src = src;
     modalTitle.textContent = title;
-    if (src && src.includes('3Skill_Pvt.png')) {
-      modalImage.style.filter = 'invert(0.9) hue-rotate(180deg)';
-    } else {
-      modalImage.style.filter = 'none';
-    }
+    modalImage.style.filter = 'none';
     modalOverlay.classList.add('active');
   });
 });
