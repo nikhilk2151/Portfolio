@@ -84,7 +84,7 @@ window.addEventListener('scroll', () => {
   const scrollY = window.pageYOffset;
   const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
   const progress = (scrollY / scrollHeight) * 100;
-  progressBar.style.width = `${progress}%`;
+  if (progressBar) progressBar.style.width = `${progress}%`;
 
   sections.forEach(section => {
     const sectionTop = section.offsetTop - 130;
@@ -92,7 +92,8 @@ window.addEventListener('scroll', () => {
     const sectionId = section.getAttribute('id');
     if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
       document.querySelectorAll('.nav-links a').forEach(link => {
-        link.classList.toggle('active', link.getAttribute('href') === `#${sectionId}`);
+        const href = link.getAttribute('href');
+        link.classList.toggle('active', href ? href.endsWith(`#${sectionId}`) : false);
       });
     }
   });
@@ -129,6 +130,11 @@ certificateButtons.forEach(btn => {
     const title = btn.dataset.title || 'Certificate Preview';
     modalImage.src = src;
     modalTitle.textContent = title;
+    if (src && src.includes('3Skill_Pvt.png')) {
+      modalImage.style.filter = 'invert(0.9) hue-rotate(180deg)';
+    } else {
+      modalImage.style.filter = 'none';
+    }
     modalOverlay.classList.add('active');
   });
 });
@@ -191,7 +197,9 @@ window.addEventListener('load', () => {
 const pageLinks = document.querySelectorAll('.nav-links a');
 pageLinks.forEach(link => {
   link.addEventListener('click', (event) => {
-    if (link.host === window.location.host && link.pathname !== window.location.pathname) return;
+    const linkPath = link.pathname.replace(/\/index\.html$/, '/');
+    const currentPath = window.location.pathname.replace(/\/index\.html$/, '/');
+    if (link.host === window.location.host && linkPath !== currentPath) return;
     if (link.hash) {
       event.preventDefault();
       const target = document.querySelector(link.hash);
@@ -207,6 +215,11 @@ imageModals.forEach(button => {
     const title = button.dataset.title;
     modalImage.src = src;
     modalTitle.textContent = title;
+    if (src && src.includes('3Skill_Pvt.png')) {
+      modalImage.style.filter = 'invert(0.9) hue-rotate(180deg)';
+    } else {
+      modalImage.style.filter = 'none';
+    }
     modalOverlay.classList.add('active');
   });
 });

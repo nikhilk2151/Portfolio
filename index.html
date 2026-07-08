@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Modern dark portfolio website for a Computer Science student showcasing skills, projects, experience, and contact." />
-  <title>Home | Portfolio</title>
+  <meta name="description"
+    content="Modern dark portfolio website for Nikhil Kumar, Computer Science student showcasing skills, projects, experience, and contact." />
+  <title>Nikhil Kumar | Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <div class="page-loader">
     <div class="loader-ring"></div>
   </div>
-  <div class="progress-wrap"><div class="progress-bar"></div></div>
+  <div class="progress-wrap">
+    <div class="progress-bar"></div>
+  </div>
   <header class="navbar">
     <div class="container">
-      <a href="index.html" class="logo"><span>PX</span>Portfolio</a>
+      <a href="#home" class="logo"><span>PX</span>Portfolio</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+          aria-hidden="true">
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="education.html">Education</a>
-        <a href="achievements.html">Achievements</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </nav>
-
     </div>
   </header>
 
   <main>
-    <section class="hero container">
+    <!-- Hero Section -->
+    <section id="home" class="hero container">
       <div class="hero-grid">
         <div class="hero-content reveal">
           <span class="hero-subtitle">Hey there, I’m</span>
-          <h1 class="hero-title">Nikhil <span>Kumar</span></h1>
-          <p class="hero-text"> Computer Science student at Chaudhary Charan Singh University, Meerut, building modern web apps and campus projects.</p>
+          <h1 class="hero-title">Nikhil </h1>
+          <p class="hero-text"> Computer Science student at Chaudhary Charan Singh University, Meerut, building modern
+            web apps and campus projects.</p>
           <div class="typewriter"></div>
           <div class="hero-buttons">
             <a href="assets/Nikhil Kumar (3).pdf" class="btn" download>Download Resume</a>
-            <a href="contact.html" class="btn-secondary">Hire Me</a>
+            <a href="#contact" class="btn-secondary">Hire Me</a>
           </div>
           <div class="hero-socials">
-            <a href="https://github.com/nikhilk2151" class="social-icon" aria-label="GitHub" target="_blank" rel="noreferrer">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="#FFFFFF" aria-hidden="true"><path d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.799 8.205 11.387.6.111.82-.261.82-.58 0-.286-.011-1.041-.017-2.045-3.338.726-4.042-1.609-4.042-1.609-.546-1.387-1.333-1.757-1.333-1.757-1.091-.746.083-.731.083-.731 1.205.085 1.84 1.237 1.84 1.237 1.073 1.84 2.815 1.309 3.502 1.001.108-.78.421-1.309.766-1.61-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.323 3.301 1.23a11.53 11.53 0 0 1 3.005-.404 11.52 11.52 0 0 1 3.005.404c2.292-1.553 3.299-1.23 3.299-1.23.654 1.653.242 2.873.118 3.176.768.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.624-5.476 5.92.432.372.816 1.102.816 2.222 0 1.605-.015 2.898-.015 3.293 0 .322.218.697.825.579C20.565 21.796 24 17.302 24 12c0-6.627-5.373-12-12-12Z"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/in/nikhil-kumar-b3997732a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon social-icon-linkedin" aria-label="LinkedIn" target="_blank" rel="noreferrer">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="#0077B5" aria-hidden="true">
-                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM8.5 8h3.84v2.16h.05c.54-1.02 1.86-2.16 3.83-2.16 4.1 0 4.86 2.7 4.86 6.2V24h-4v-7.56c0-1.8-.03-4.12-2.51-4.12-2.51 0-2.89 1.96-2.89 3.99V24h-4V8z"/>
+            <a href="https://github.com/nikhilk2151" class="social-icon" aria-label="GitHub" target="_blank"
+              rel="noreferrer">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="#FFFFFF" aria-hidden="true">
+                <path
+                  d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.799 8.205 11.387.6.111.82-.261.82-.58 0-.286-.011-1.041-.017-2.045-3.338.726-4.042-1.609-4.042-1.609-.546-1.387-1.333-1.757-1.333-1.757-1.091-.746.083-.731.083-.731 1.205.085 1.84 1.237 1.84 1.237 1.073 1.84 2.815 1.309 3.502 1.001.108-.78.421-1.309.766-1.61-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.323 3.301 1.23a11.53 11.53 0 0 1 3.005-.404 11.52 11.52 0 0 1 3.005.404c2.292-1.553 3.299-1.23 3.299-1.23.654 1.653.242 2.873.118 3.176.768.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.624-5.476 5.92.432.372.816 1.102.816 2.222 0 1.605-.015 2.898-.015 3.293 0 .322.218.697.825.579C20.565 21.796 24 17.302 24 12c0-6.627-5.373-12-12-12Z" />
               </svg>
             </a>
-            <a href="https://www.instagram.com/_its_nikhil245_?igsh=MW00cHYwcjd6OXJrag==" class="social-icon social-icon-instagram" aria-label="Instagram" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/nikhil-kumar-b3997732a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="social-icon social-icon-linkedin" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="#0077B5" aria-hidden="true">
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM8.5 8h3.84v2.16h.05c.54-1.02 1.86-2.16 3.83-2.16 4.1 0 4.86 2.7 4.86 6.2V24h-4v-7.56c0-1.8-.03-4.12-2.51-4.12-2.51 0-2.89 1.96-2.89 3.99V24h-4V8z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/_its_nikhil245_?igsh=MW00cHYwcjd6OXJrag=="
+              class="social-icon social-icon-instagram" aria-label="Instagram" target="_blank" rel="noreferrer">
               <svg viewBox="0 0 24 24" width="24" height="24" fill="#E1306C" aria-hidden="true">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
               </svg>
             </a>
             <a href="mailto:nikhilk21518@gmail.com" class="social-icon" aria-label="Email">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="#EA4335" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.25-8 5-8-5V6l8 5 8-5v2.25Z"/></svg>
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="#EA4335" aria-hidden="true">
+                <path
+                  d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.25-8 5-8-5V6l8 5 8-5v2.25Z" />
+              </svg>
             </a>
           </div>
         </div>
@@ -75,79 +93,552 @@
       </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="container reveal">
       <div class="section-title">About</div>
+      <h2>Learning, Building, and Growing Through Real-World Development Projects</h2><br />
+      <div class="hero-grid">
+        <div class="hero-card reveal">
+          <h3>Detailed Introduction</h3>
+          <p>I am a second-semester B.Sc (Hons) Computer Science student at Chaudhary Charan Singh University, Meerut,
+            focused on building effective web solutions.</p>
+          <p>My portfolio highlights campus projects, hackathon work, and responsive design with clean, modern
+            interactions.</p>
+        </div>
+        <div class="hero-card reveal">
+          <h3>Career Goals</h3>
+          <ul>
+            <li>Master full stack development with scalable architecture.</li>
+            <li>Build intelligent applications and campus tools like the Lost & Found portal.</li>
+            <li>Grow through hackathons, teamwork, and real client-focused projects.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Interests Subset -->
+      <div class="section-title" style="margin-top: 4rem;">Interests</div>
       <div class="cards-grid">
         <div class="card">
-          <h3>Profile</h3>
-          <p>Focused on modern web interfaces, accessible experiences, and AI-powered solutions that scale across devices.</p>
+          <h3>Personal Interests</h3>
+          <p>Digital art, creative coding, mindful productivity, exploring new tech trends, and hackathon collaboration.
+          </p>
         </div>
         <div class="card">
-          <h3>Vision</h3>
-          <p>To craft user-first software that is inviting, fast, and future-ready for digital brands and startups.</p>
+          <h3>Technical Interests</h3>
+          <p>Web animation, AI integration, data-driven dashboards, API design, and toolchain automation.</p>
         </div>
         <div class="card">
-          <h3>Approach</h3>
-          <p>Using glassmorphism, subtle motion, and performance-first techniques to create memorable digital stories.</p>
+          <h3>Strengths</h3>
+          <p>Problem solving, rapid prototyping, mobile-first layouts, clean documentation, and team collaboration.</p>
+        </div>
+      </div>
+
+      <!-- Timeline Subset -->
+      <div class="section-title" style="margin-top: 4rem;">Timeline</div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <h3>2026 - Present</h3>
+          <p>Second-semester B.Sc (Hons) Computer Science </p>
+        </article>
+        <article class="timeline-item">
+          <h3>2026</h3>
+          <p> Completed first-semester with 7.9 CGPA </p>
+        </article>
+        <article class="timeline-item">
+          <h3>2025</h3>
+          <p>Competed in TechScript hackathon and ranked among the top 10 teams with a Lost & Found portal project.</p>
+        </article>
+        <article class="timeline-item">
+          <h3>2024</h3>
+          <p>Completed 12th from UP Board with 82% with holding 5th rank at S.B. Inter College</p>
+        </article>
+      </div>
+
+      <!-- Stats Grid Subset -->
+      <div class="cards-grid stats-grid" style="margin-top: 4rem;">
+        <div class="card">
+          <h3>5+</h3>
+          <p>Projects planned and prototyped for real clients and school challenges.</p>
+        </div>
+        <div class="card">
+          <h3>5+</h3>
+          <p>Certificates and recognitions in coding, AI, and web development.</p>
+        </div>
+        <div class="card">
+          <h3>98%</h3>
+          <p>Client satisfaction on collaborative projects and internship contributions.</p>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="container reveal">
-      <div class="section-title">Featured</div>
-      <h2>Recent Projects</h2><br />
+    <!-- Education Section -->
+    <section id="education" class="container reveal">
+      <div class="section-title">Education</div>
+      <h2>Study, certificates, and academic milestones in my learning journey.</h2><br />
+      <div class="timeline">
+        <article class="timeline-item">
+          <h3>2025 - Present</h3>
+          <p>B.Sc (Hons) Computer Science, second semester, Chaudhary Charan Singh University, Meerut.</p>
+        </article>
+        <article class="timeline-item">
+          <h3>2024</h3>
+          <p>Completed 12th from UP Board with 82% marks, building strong foundations in science and maths.</p>
+        </article>
+        <article class="timeline-item">
+          <h3>2022</h3>
+          <p>Completed 10th from S.B. Inter College with 71%, focusing on technology and analytics.</p>
+        </article>
+      </div>
+
+      <div class="cards-grid" style="margin-top: 4rem;">
+        <div class="card">
+          <h3>College</h3>
+          <p>Chaudhary Charan Singh University, Meerut — B.Sc (Hons) Computer Science, second semester.</p>
+        </div>
+        <div class="card">
+          <h3>Courses</h3>
+          <ul>
+            <li>Web Technologies</li>
+            <li>Data Structures</li>
+            <li>Object-Oriented Programming</li>
+            <li>Professional Communication</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Academic Credentials</h3>
+          <p> Holding 7.9 CGPA from first semester
+            12th from UP Board with 82% and 10th from S.B. Inter College with 71%.</p>
+        </div>
+      </div>
+
+      <div class="section-title" style="margin-top: 4rem;">Academic Achievements</div>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Academic Excellence</h3>
+          <p>Secured top grades in programming, system design, and web engineering modules.</p>
+        </div>
+        <div class="card">
+          <h3>Course Projects</h3>
+          <p>Delivered polished course applications, interactive labs, and team-based development work.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="container reveal">
+      <div class="section-title">Achievements</div>
+      <h2>Certificates, awards, and recognition for my growth as a developer.</h2><br />
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Hackathons</h3>
+          <p>Participated in 2+ hackathons, including TechScript where my team ranked top 10 with a Lost & Found portal.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Awards</h3>
+          <p>Recognized for creative development and effective team delivery during campus and online competitions.</p>
+        </div>
+        <div class="card">
+          <h3>Badges</h3>
+          <p>Earned badges for responsive UI, modern JavaScript practices, and project deployment excellence.</p>
+        </div>
+      </div>
+
+      <div class="section-title" style="margin-top: 4rem;">Gallery</div>
       <div class="project-grid">
-        <article class="project-card" data-categories="web development, javascript" data-title="AI Health Mentor">
+        <div class="project-card">
+          <img src="images/3Skill_Pvt.png" alt="Internship Certificate" />
+          <div class="project-info">
+            <h3>3Skill Internship Certificate</h3>
+            <button class="btn-outline preview-btn" data-src="images/3Skill_Pvt.png"
+              data-title="3Skill Internship Completion">Preview</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/images - File Explorer 6_6_2026 10_22_32 PM.png" alt="Certificate 1" />
+          <div class="project-info">
+            <h3>Tcs icon certificate</h3>
+            <button class="btn-outline preview-btn" data-src="images/images - File Explorer 6_6_2026 10_22_32 PM.png"
+              data-title="Web Development Certificate">Preview</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/DSA certification.pdf - Google Chrome 6_6_2026 10_19_38 PM.png" alt="Certificate 2" />
+          <div class="project-info">
+            <h3>DSA Course Certificate</h3>
+            <button class="btn-outline preview-btn"
+              data-src="images/DSA certification.pdf - Google Chrome 6_6_2026 10_19_38 PM.png"
+              data-title="DSA Certification">Preview</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-grid stats-grid" style="margin-top: 4rem;">
+        <div class="card">
+          <h3>5+</h3>
+          <p>Certificates earned in development, AI, and cloud technologies.</p>
+        </div>
+        <div class="card">
+          <h3>5+</h3>
+          <p>Competitions participated in including coding, design and idea challenges.</p>
+        </div>
+        <div class="card">
+          <h3>3</h3>
+          <p>National and regional awards in innovation and team collaboration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container reveal">
+      <div class="section-title">Experience</div>
+      <h2>Professional experience, internships, and collaborative development roles.</h2><br />
+      <div class="timeline">
+        <article class="timeline-item">
+          <h3>2026</h3>
+          <p>Ex-Intern (Web Development) at 3Skill Pvt — 2-month unpaid internship.</p>
+        </article>
+        <article class="timeline-item">
+          <h3>Freelance Projects</h3>
+          <p>Delivered polished landing pages, portfolio redesigns, and business site updates to online clients.</p>
+        </article>
+        <article class="timeline-item">
+          <h3>Hackathon</h3>
+          <p>Developed a full-stack application within 24 hours, showcasing problem-solving and teamwork skills.</p>
+        </article>
+        <article class="timeline-item">
+          <h3>Team Projects</h3>
+          <p>Collaborated on team apps with version control, code reviews, and sprint-based delivery.</p>
+        </article>
+      </div>
+
+      <div class="cards-grid" style="margin-top: 4rem;">
+        <div class="card">
+          <h3>Responsibilities</h3>
+          <ul>
+            <li>Designing modern user interfaces</li>
+            <li>Building high-performance frontends</li>
+            <li>Integrating third-party APIs</li>
+            <li>Testing and documentation</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Technologies</h3>
+          <p>JavaScript, Node.js, React, Express, CSS animations, Git, and deployment tools.</p>
+        </div>
+        <div class="card">
+          <h3>Collaboration</h3>
+          <p>Working with designers and product stakeholders to deliver accessible, high-quality solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container reveal">
+      <div class="section-title">Projects</div>
+      <h2>Interactive showcases built with modern interfaces and intelligent tools.</h2><br />
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web development">Web Development</button>
+        <button class="filter-btn" data-filter="ai projects">AI Projects</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="react">React</button>
+      </div>
+      <div class="search-group">
+        <input id="project-search" type="search" placeholder="Search projects..." aria-label="Search projects" />
+      </div>
+      <div class="project-grid">
+        <article class="project-card" data-categories="web development, javascript" data-title="AI Dashboard">
           <img src="images/project1.png" alt="AI Health Mentor" />
           <div class="project-info">
-            <h3>AI Health Mentor</h3>
-            <p>Healthcare analytics platform with AI-powered health monitoring, smart insights, and interactive charts.</p>
+            <h3>AI health mentor</h3>
+            <p>Visual analytics platform that uses intelligent charts and predictions for decision-making.</p>
             <div class="project-badges">
+              <span class="badge">AI Projects</span>
               <span class="badge">React</span>
-              <span class="badge">Tailwind</span>
             </div>
             <div class="project-actions">
-              <a href="https://github.com/nikhilk2151/AI-Health-Monitor-App" class="btn-outline" aria-label="View on GitHub" target="_blank" rel="noreferrer">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="#FFFFFF" aria-hidden="true" style="margin-right: 6px;"><path d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.799 8.205 11.387.6.111.82-.261.82-.58 0-.286-.011-1.041-.017-2.045-3.338.726-4.042-1.609-4.042-1.609-.546-1.387-1.333-1.757-1.333-1.757-1.091-.746.083-.731.083-.731 1.205.085 1.84 1.237 1.84 1.237 1.073 1.84 2.815 1.309 3.502 1.001.108-.78.421-1.309.766-1.61-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.323 3.301 1.23a11.53 11.53 0 0 1 3.005-.404 11.52 11.52 0 0 1 3.005.404c2.292-1.553 3.299-1.23 3.299-1.23.654 1.653.242 2.873.118 3.176.768.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.624-5.476 5.92.432.372.816 1.102.816 2.222 0 1.605-.015 2.898-.015 3.293 0 .322.218.697.825.579C20.565 21.796 24 17.302 24 12c0-6.627-5.373-12-12-12Z"/></svg>Code
+              <a href="https://github.com/nikhilk2151/AI-Health-Monitor-App" class="btn-outline"
+                aria-label="View on GitHub" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="#FFFFFF" aria-hidden="true"
+                  style="margin-right: 6px;">
+                  <path
+                    d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.799 8.205 11.387.6.111.82-.261.82-.58 0-.286-.011-1.041-.017-2.045-3.338.726-4.042-1.609-4.042-1.609-.546-1.387-1.333-1.757-1.333-1.757-1.091-.746.083-.731.083-.731 1.205.085 1.84 1.237 1.84 1.237 1.073 1.84 2.815 1.309 3.502 1.001.108-.78.421-1.309.766-1.61-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.323 3.301 1.23a11.53 11.53 0 0 1 3.005-.404 11.52 11.52 0 0 1 3.005.404c2.292-1.553 3.299-1.23 3.299-1.23.654 1.653.242 2.873.118 3.176.768.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.624-5.476 5.92.432.372.816 1.102.816 2.222 0 1.605-.015 2.898-.015 3.293 0 .322.218.697.825.579C20.565 21.796 24 17.302 24 12c0-6.627-5.373-12-12-12Z" />
+                </svg>Code
               </a>
-              <a href="https://ai-health-mentor.netlify.app" class="btn" target="_blank" rel="noreferrer">Live Demo</a>
+              <a href="https://ai-health-mentor.web.app/" class="btn" target="_blank" rel="noreferrer">Live Demo</a>
             </div>
           </div>
         </article>
         <article class="project-card" data-categories="javascript" data-title="Portfolio Site">
           <img src="images/project2.png" alt="Portfolio Site" />
           <div class="project-info">
-            <h3>Lost and Found App</h3>
-            <p>Finding lost items with animation, responsive layout, and smooth interactions.</p>
+            <h3>Lost and Found Portal</h3>
+            <p>Modern personal branding site with animated sections, smooth scrolling, and responsive layouts.</p>
             <div class="project-badges">
+              <span class="badge">JavaScript</span>
               <span class="badge">HTML</span>
-              <span class="badge">CSS</span>
             </div>
             <div class="project-actions">
-              <a href="https://github.com/nikhilk2151/lost-found-app" class="btn-outline" aria-label="View on GitHub" target="_blank" rel="noreferrer">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="#FFFFFF" aria-hidden="true" style="margin-right: 6px;"><path d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.799 8.205 11.387.6.111.82-.261.82-.58 0-.286-.011-1.041-.017-2.045-3.338.726-4.042-1.609-4.042-1.609-.546-1.387-1.333-1.757-1.333-1.757-1.091-.746.083-.731.083-.731 1.205.085 1.84 1.237 1.84 1.237 1.073 1.84 2.815 1.309 3.502 1.001.108-.78.421-1.309.766-1.61-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.323 3.301 1.23a11.53 11.53 0 0 1 3.005-.404 11.52 11.52 0 0 1 3.005.404c2.292-1.553 3.299-1.23 3.299-1.23.654 1.653.242 2.873.118 3.176.768.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.624-5.476 5.92.432.372.816 1.102.816 2.222 0 1.605-.015 2.898-.015 3.293 0 .322.218.697.825.579C20.565 21.796 24 17.302 24 12c0-6.627-5.373-12-12-12Z"/></svg>Code
+              <a href="https://github.com/nikhilk2151/lost-found-app" class="btn-outline" aria-label="View on GitHub"
+                target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="#FFFFFF" aria-hidden="true"
+                  style="margin-right: 6px;">
+                  <path
+                    d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.799 8.205 11.387.6.111.82-.261.82-.58 0-.286-.011-1.041-.017-2.045-3.338.726-4.042-1.609-4.042-1.609-.546-1.387-1.333-1.757-1.333-1.757-1.091-.746.083-.731.083-.731 1.205.085 1.84 1.237 1.84 1.237 1.073 1.84 2.815 1.309 3.502 1.001.108-.78.421-1.309.766-1.61-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.323 3.301 1.23a11.53 11.53 0 0 1 3.005-.404 11.52 11.52 0 0 1 3.005.404c2.292-1.553 3.299-1.23 3.299-1.23.654 1.653.242 2.873.118 3.176.768.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.624-5.476 5.92.432.372.816 1.102.816 2.222 0 1.605-.015 2.898-.015 3.293 0 .322.218.697.825.579C20.565 21.796 24 17.302 24 12c0-6.627-5.373-12-12-12Z" />
+                </svg>Code
               </a>
               <a href="https://lost-found-app-17a68.web.app/" class="btn" target="_blank" rel="noreferrer">Live Demo</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-categories="react" data-title="Product Explorer">
+          <img src="images/certificate - File Explorer 6_6_2026 10_31_40 PM.png" alt="Product Explorer" />
+          <div class="project-info">
+            <h3>secure-mail-console</h3>
+            <p>Bulk email management console with advanced filtering and reporting features.</p>
+            <div class="project-badges">
+              <span class="badge">React</span>
+              <span class="badge">Web Development</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/nikhilk2151/secure-mail-console-2" class="btn-outline"
+                aria-label="View on GitHub" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="#FFFFFF" aria-hidden="true"
+                  style="margin-right: 6px;">
+                  <path
+                    d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.799 8.205 11.387.6.111.82-.261.82-.58 0-.286-.011-1.041-.017-2.045-3.338.726-4.042-1.609-4.042-1.609-.546-1.387-1.333-1.757-1.333-1.757-1.091-.746.083-.731.083-.731 1.205.085 1.84 1.237 1.84 1.237 1.073 1.84 2.815 1.309 3.502 1.001.108-.78.421-1.309.766-1.61-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.323 3.301 1.23a11.53 11.53 0 0 1 3.005-.404 11.52 11.52 0 0 1 3.005.404c2.292-1.553 3.299-1.23 3.299-1.23.654 1.653.242 2.873.118 3.176.768.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.624-5.476 5.92.432.372.816 1.102.816 2.222 0 1.605-.015 2.898-.015 3.293 0 .322.218.697.825.579C20.565 21.796 24 17.302 24 12c0-6.627-5.373-12-12-12Z" />
+                </svg>Code
+              </a>
+              <a href="https://www.rakshak.site/" class="btn" target="_blank" rel="noreferrer">Live Demo</a>
             </div>
           </div>
         </article>
       </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="container reveal">
       <div class="section-title">Skills</div>
+      <h2>Core capabilities with animated charts and progress experiences.</h2><br />
+
+      <!-- Featured Skills Card -->
+      <div class="featured-skill-card">
+        <div class="featured-content">
+          <h3>My Technical Expertise</h3>
+          <p>I'm proficient in a wide range of technologies spanning frontend, backend, databases, and core computer
+            science concepts. Each skill has been developed through hands-on projects and real-world applications.</p>
+          <div class="skill-tags">
+            <span class="tag">Web Development</span>
+            <span class="tag">Backend Development</span>
+            <span class="tag">Data Structures</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Individual Skill Cards -->
       <div class="cards-grid">
-        <div class="card">
-          <h3>Frontend</h3>
-          <p>HTML, CSS, JavaScript, React, responsive design, animations, and state-based UI.</p>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🌐</div>
+          <h3>HTML</h3>
+          <p>Semantic markup and accessibility standards</p>
+          <div class="skill-level">
+            <span class="level-badge">95%</span>
+          </div>
         </div>
-        <div class="card">
-          <h3>Backend</h3>
-          <p>Node.js, Express, REST APIs, MongoDB, authentication, and server-side business logic.</p>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Responsive design and modern styling</p>
+          <div class="skill-level">
+            <span class="level-badge">93%</span>
+          </div>
         </div>
-        <div class="card">
-          <h3>Tools</h3>
-          <p>Git, VS Code, Figma, Chrome DevTools, testing, and performance optimization.</p>
+        <div class="card skill-card">
+          <div class="skill-card-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>ES6+, DOM manipulation, async programming</p>
+          <div class="skill-level">
+            <span class="level-badge">90%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🔧</div>
+          <h3>C</h3>
+          <p>Systems programming and core concepts</p>
+          <div class="skill-level">
+            <span class="level-badge">85%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">⚙️</div>
+          <h3>C++</h3>
+          <p>Object-oriented programming and STL</p>
+          <div class="skill-level">
+            <span class="level-badge">88%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">📊</div>
+          <h3>Data Structures & Algorithms</h3>
+          <p>Optimization and problem-solving techniques</p>
+          <div class="skill-level">
+            <span class="level-badge">92%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">⚛️</div>
+          <h3>React</h3>
+          <p>Hooks, state management, component design</p>
+          <div class="skill-level">
+            <span class="level-badge">82%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🚀</div>
+          <h3>Node.js</h3>
+          <p>Server development and REST APIs</p>
+          <div class="skill-level">
+            <span class="level-badge">78%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🗄️</div>
+          <h3>MongoDB</h3>
+          <p>NoSQL databases and document modeling</p>
+          <div class="skill-level">
+            <span class="level-badge">80%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🔗</div>
+          <h3>API</h3>
+          <p>REST APIs and integration design</p>
+          <div class="skill-level">
+            <span class="level-badge">85%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">📦</div>
+          <h3>Git</h3>
+          <p>Version control and collaboration</p>
+          <div class="skill-level">
+            <span class="level-badge">92%</span>
+          </div>
+        </div>
+        <div class="card skill-card">
+          <div class="skill-card-icon">🧪</div>
+          <h3>Testing</h3>
+          <p>Unit testing and quality assurance</p>
+          <div class="skill-level">
+            <span class="level-badge">76%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container reveal">
+      <div class="section-title">Contact</div>
+      <h2>Let's connect and build something remarkable together.</h2><br />
+
+      <!-- Featured Contact Card -->
+      <div class="featured-skill-card">
+        <div class="featured-content">
+          <h3>Get In Touch</h3>
+          <p>I'm always excited to collaborate on new projects, discuss ideas, or help with development challenges. Feel
+            free to reach out through any of the channels below. I'll get back to you as soon as possible!</p>
+          <div class="skill-tags">
+            <span class="tag">Available for Work</span>
+            <span class="tag">Quick Response</span>
+            <span class="tag">Collaboration</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info Cards -->
+      <div class="cards-grid" style="margin-top: 4rem;">
+        <div class="card skill-card contact-info-card">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="#EA4335" aria-hidden="true"
+              style="margin-bottom: 0.5rem;">
+              <path
+                d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.25-8 5-8-5V6l8 5 8-5v2.25Z" />
+            </svg>
+          </div>
+          <h3>Email</h3>
+          <p>Send me an email for inquiries or opportunities</p>
+          <a href="mailto:nikhilk21518@gmail.com" class="contact-link">nikhilk21518@gmail.com</a>
+        </div>
+
+        <div class="card skill-card contact-info-card">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#4CAF50" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-bottom: 0.5rem;">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+          </div>
+          <h3>Phone</h3>
+          <p>Call or text me anytime</p>
+          <a href="tel:+917017847291" class="contact-link">+91 70178 47291</a>
+        </div>
+
+        <div class="card skill-card contact-info-card">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#FF5722" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-bottom: 0.5rem;">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <h3>Location</h3>
+          <p>Based in Uttar Pradesh, India</p>
+          <a href="#" class="contact-link">Sehera, Bulandshahr, UP</a>
+        </div>
+
+        <div class="card skill-card contact-info-card">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="#0077B5" aria-hidden="true"
+              style="margin-bottom: 0.5rem;">
+              <path
+                d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM8.5 8h3.84v2.16h.05c.54-1.02 1.86-2.16 3.83-2.16 4.1 0 4.86 2.7 4.86 6.2V24h-4v-7.56c0-1.8-.03-4.12-2.51-4.12-2.51 0-2.89 1.96-2.89 3.99V24h-4V8z" />
+            </svg>
+          </div>
+          <h3>LinkedIn</h3>
+          <p>Connect with me professionally</p>
+          <a href="https://www.linkedin.com/in/nikhil-kumar-b3997732a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank" rel="noreferrer" class="contact-link">View Profile</a>
+        </div>
+
+        <div class="card skill-card contact-info-card">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="#FFFFFF" aria-hidden="true"
+              style="margin-bottom: 0.5rem;">
+              <path
+                d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.799 8.205 11.387.6.111.82-.261.82-.58 0-.286-.011-1.041-.017-2.045-3.338.726-4.042-1.609-4.042-1.609-.546-1.387-1.333-1.757-1.333-1.757-1.091-.746.083-.731.083-.731 1.205.085 1.84 1.237 1.84 1.237 1.073 1.84 2.815 1.309 3.502 1.001.108-.78.421-1.309.766-1.61-2.665-.303-5.467-1.333-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.323 3.301 1.23a11.53 11.53 0 0 1 3.005-.404 11.52 11.52 0 0 1 3.005.404c2.292-1.553 3.299-1.23 3.299-1.23.654 1.653.242 2.873.118 3.176.768.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.624-5.476 5.92.432.372.816 1.102.816 2.222 0 1.605-.015 2.898-.015 3.293 0 .322.218.697.825.579C20.565 21.796 24 17.302 24 12c0-6.627-5.373-12-12-12Z" />
+            </svg>
+          </div>
+          <h3>GitHub</h3>
+          <p>Check out my projects and code</p>
+          <a href="https://github.com/nikhilk2151" target="_blank" rel="noreferrer" class="contact-link">View
+            Repository</a>
+        </div>
+
+        <div class="card skill-card contact-info-card">
+          <div class="skill-card-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="#E1306C" aria-hidden="true"
+              style="margin-bottom: 0.5rem;">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+            </svg>
+          </div>
+          <h3>Instagram</h3>
+          <p>Follow me on Instagram</p>
+          <a href="https://www.instagram.com/_its_nikhil245_?igsh=MW00cHYwcjd6OXJrag==" target="_blank" rel="noreferrer"
+            class="contact-link">@_its_nikhil245_</a>
         </div>
       </div>
     </section>
@@ -165,6 +656,15 @@
     </div>
   </footer>
 
+  <div class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close modal">×</button>
+      <h3>Certificate Preview</h3>
+      <img src="images/images - File Explorer 6_6_2026 10_22_32 PM.png" alt="Certificate Preview" />
+    </div>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
+
 </html>
