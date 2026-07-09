@@ -5,7 +5,7 @@ const sections = document.querySelectorAll('section[id]');
 const progressBar = document.querySelector('.progress-bar');
 const revealElements = document.querySelectorAll('.reveal');
 const filterBtns = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
+const projectCards = document.querySelectorAll('#projects .project-card');
 const searchInput = document.querySelector('#project-search');
 const modalOverlay = document.querySelector('.modal-overlay');
 const modalImage = document.querySelector('.modal img');
@@ -101,8 +101,8 @@ window.addEventListener('scroll', () => {
 
 const filterProjects = (category) => {
   projectCards.forEach(card => {
-    const categories = card.dataset.categories.toLowerCase().split(',');
-    const title = card.dataset.title.toLowerCase();
+    const categories = card.dataset.categories ? card.dataset.categories.toLowerCase().split(',').map(c => c.trim()) : [];
+    const title = card.dataset.title ? card.dataset.title.toLowerCase() : '';
     const searchKey = searchInput ? searchInput.value.toLowerCase() : '';
     const matchesCategory = category === 'all' || categories.includes(category);
     const matchesSearch = title.includes(searchKey);
