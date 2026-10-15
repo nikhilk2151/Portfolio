@@ -933,21 +933,26 @@ p {
 .certificate-image-wrapper {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.35);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 10px;
 }
 
 .certificate-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  border-radius: 8px;
   transition: transform var(--transition);
 }
 
 .certificate-card:hover img {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 .certificate-content {
@@ -1230,7 +1235,10 @@ p {
 
 .modal img {
   width: 100%;
-  border-radius: 22px;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 16px;
+  display: block;
 }
 
 .modal-close {
@@ -1577,11 +1585,17 @@ body.light-mode .menu-toggle {
 body.light-mode .card,
 body.light-mode .hero-card,
 body.light-mode .project-card,
+body.light-mode .certificate-card,
 body.light-mode .contact-card,
 body.light-mode .footer,
 body.light-mode .modal {
   background: rgba(255, 255, 255, 0.82);
   color: #101828;
+}
+
+body.light-mode .certificate-image-wrapper {
+  background: rgba(15, 23, 42, 0.04);
+  border-bottom-color: rgba(15, 23, 42, 0.08);
 }
 
 body.light-mode .project-image-container {
@@ -1680,7 +1694,8 @@ body.light-mode .footer a:hover {
   }
 
   .certificate-image-wrapper {
-    height: 160px;
+    height: 180px;
+    padding: 8px;
   }
 
   .certificate-content {
@@ -1804,7 +1819,8 @@ body.light-mode .footer a:hover {
   }
 
   .certificate-image-wrapper {
-    height: 115px;
+    height: 140px;
+    padding: 6px;
   }
 
   .certificate-content {
@@ -1950,7 +1966,8 @@ body.light-mode .footer a:hover {
   }
 
   .certificate-image-wrapper {
-    height: 130px;
+    height: 160px;
+    padding: 6px;
   }
 
   .stats-grid {
